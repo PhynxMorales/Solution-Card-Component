@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 
-  <!--Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,17 +24,6 @@
       --vary_dark_cyan: hsl(179, 100%, 13%);
       --paragraphs: hsla(0, 0%, 100%, 0.75);
       --gray: hsl(0, 0%, 95%);
-      --very-light-gray: hsl(0, 0%, 95%);
-    }
-
-
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
     }
 
     body {
@@ -44,14 +32,16 @@
       align-items: center;
       margin: auto;
       height: 100vh;
-      background-color: var(--very-light-gray);
     }
 
     main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 920px;
     }
 
-/* Cards */
+
 
     .cards-container {
       display: grid;
@@ -71,7 +61,7 @@
       line-height: 1.5rem;
       color: var(--paragraphs);
       font-family: 'Lexend Deca', sans-serif;
-      margin: 0 0 4rem 0;
+      margin: 40px 0 4.5rem 0;
       font-size: 15px;
       text-align: left;
 
@@ -80,7 +70,8 @@
     .card__title {
       color: #fff;
       font-size: 2.5rem;
-      letter-spacing: 1px;
+      letter-spacing: 0px;
+      margin: 40px 0 0 0;
       text-transform: uppercase;
       font-family: 'Big Shoulders Display', cursive;
     }
@@ -102,11 +93,12 @@
     .card-btn {
       border: 2px solid #fff;
       border-radius: 2rem;
-      padding: 0.9rem 1rem;
-      width: 70%;
+      padding: 0.8rem 0;
+      width: 68%;
       background-color: #fff;
       cursor: pointer;
       font-family: 'Lexend Deca', sans-serif;
+      font-size: 15px;
     }
 
     .card-btn:hover {
@@ -126,7 +118,7 @@
       color: var(--vary_dark_cyan);
     }
 
-/* Screen Tablet */
+
 
     @media screen and (max-width:975px) {
       body {
@@ -143,7 +135,7 @@
       }
     }
 
-/* Screen Mobile Small */
+
 
     @media screen and (max-width:575px) {
       .card:nth-child(1) {
@@ -155,8 +147,8 @@
         border-radius: 0 0 5px 5px;
       }
     }
-/* Screen Mobil Extra Small */
-    @media screen and (max-width:450px) {
+
+    @media screen and (max-width:375px) {
       body {
         height: auto;
       }
@@ -177,7 +169,7 @@
     <div class="cards-container">
       <div class="card">
         <div class="card__icon">
-          <img src="./images/icon-sedans.svg" alt="Card Icon Sedans">
+          <img src="./images/icon-sedans.svg" alt="">
         </div>
         <h2 class="card__title">SEDANS</h2>
         <p class="card__paragraph">
@@ -189,9 +181,9 @@
       </div>
       <div class="card">
         <div class="card__icon">
-          <img src="./images/icon-suvs.svg" alt="Card Icon Suvs">
+          <img src="./images/icon-suvs.svg" alt="">
         </div>
-        <h2 class="card__title">Suvs</h2>
+        <h1 class="card__title">Suvs</h1>
         <p class="card__paragraph">
 
           Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
@@ -201,7 +193,7 @@
       </div>
       <div class="card">
         <div class="card__icon">
-          <img src="./images/icon-luxury.svg" alt="Card Icon luxury">
+          <img src="./images/icon-luxury.svg" alt="">
         </div>
         <h2 class="card__title">luxury</h2>
         <p class="card__paragraph">
